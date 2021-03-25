@@ -1,0 +1,111 @@
+/*reglas por defecto*/
+
+* {
+    box-sizing: border-box;
+    /* https://fonts.google.com/?query=quic */
+    font-family: 'Quicksand', sans-serif;
+}
+
+body {
+    margin: 0;
+}
+
+
+/* Clear floats after the columns */
+
+.row:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+
+/*Reglas asociadas a los columnas*/
+
+.column-1 {
+    width: 100%;
+    float: left;
+    color: #ffffff;
+}
+
+.column-2 {
+    width: 50%;
+    float: left;
+    padding: 40px;
+}
+
+.column-4 {
+    width: 25%;
+    float: left;
+    padding: 40px;
+}
+
+#section-2 {
+    background-color: #5f9ea0;
+    text-align: center;
+    padding-top: 50px;
+    padding-bottom: 50px;
+}
+
+#section-3 {
+    padding: 0 7%;
+}
+
+#section-4 {
+    background-color: rgba(128, 128, 128, 0.5);
+}
+
+.column-4 p {
+    color: white;
+}
+
+
+/* Estilos de la página */
+
+#header {
+    text-align: center;
+    background-image: url("../img/header.jpg");
+    background-size: cover;
+    padding: 30vh 100px;
+    color: black;
+}
+
+#header h1 {
+    font-size: 70px;
+}
+
+#header h2 {
+    font-size: 50px;
+}
+
+#map {
+    width: 100%;
+    height: 350px;
+    border: 0;
+    /*height="450" style="border:0;"*/
+}
+
+@media screen and (max-width: 600px) {
+    /* Aquí dentro van las reglas */
+    #header {
+        padding: 150px 50px;
+        height: 100vh;
+        color: black;
+    }
+    #header h1 {
+        font-size: 40px;
+    }
+    #header h2 {
+        font-size: 25px;
+    }
+    .column-2 {
+        width: 100%;
+        float: left;
+        padding: 10px;
+    }
+    #section-2,
+    #section-3 {
+        padding-left: 5px;
+        padding-right: 5px;
+    }
+}
